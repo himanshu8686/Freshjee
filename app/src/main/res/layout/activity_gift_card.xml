@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiftCardActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="My Gift Cards"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:padding="@dimen/dimen_10dp"
+            android:src="@drawable/back_icon"
+            android:tint="@color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/card_grey"
+                android:layout_weight="10"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_20sp"
+                    android:text="Design Your Gift Card"
+                    android:textColor="@color/black_transparent"
+                    android:padding="@dimen/dimen_10dp"
+                    />
+            </LinearLayout>
+
+            <!-- second section starts-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/card_grey"
+                android:orientation="vertical"
+                android:layout_weight="60"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_20sp"
+                        android:text="Select Your Occasion"
+                        android:textColor="@color/black_transparent"
+                        android:padding="@dimen/dimen_10dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dimen_5dp">
+                    <TextView
+                        android:layout_weight="30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mother's Day"
+                        android:textColor="@color/black_transparent"
+                        android:textStyle="bold"
+                        android:padding="@dimen/dimen_10dp"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:background="@drawable/button_background_light"/>
+                    <TextView
+                        android:layout_weight="30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Birthday"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_transparent"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:background="@drawable/button_background_light"/>
+                    <TextView
+                        android:layout_weight="30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wedding"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_transparent"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:background="@drawable/button_background_light"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_20sp"
+                        android:text="Select The Amount"
+                        android:textColor="@color/black_transparent"
+                        android:padding="@dimen/dimen_10dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    >
+                    <TextView
+                        android:layout_weight="20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:paddingTop="@dimen/dimen_5dp"
+                        android:paddingBottom="@dimen/dimen_5dp"
+                        android:paddingLeft="@dimen/dimen_10dp"
+                        android:paddingRight="@dimen/dimen_10dp"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:background="@drawable/button_background_dark"/>
+                    <TextView
+                        android:layout_weight="20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:paddingTop="@dimen/dimen_5dp"
+                        android:paddingBottom="@dimen/dimen_5dp"
+                        android:paddingLeft="@dimen/dimen_10dp"
+                        android:paddingRight="@dimen/dimen_10dp"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:background="@drawable/button_background_dark"/>
+                    <TextView
+                        android:layout_weight="20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="400"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:paddingTop="@dimen/dimen_5dp"
+                        android:paddingBottom="@dimen/dimen_5dp"
+                        android:paddingLeft="@dimen/dimen_10dp"
+                        android:paddingRight="@dimen/dimen_10dp"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:background="@drawable/button_background_dark"/>
+                    <TextView
+                        android:layout_weight="20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:paddingTop="@dimen/dimen_5dp"
+                        android:paddingBottom="@dimen/dimen_5dp"
+                        android:paddingLeft="@dimen/dimen_10dp"
+                        android:paddingRight="@dimen/dimen_10dp"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:background="@drawable/button_background_dark"/>
+                    <TextView
+                        android:layout_weight="20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:paddingTop="@dimen/dimen_5dp"
+                        android:paddingBottom="@dimen/dimen_5dp"
+                        android:paddingLeft="@dimen/dimen_10dp"
+                        android:paddingRight="@dimen/dimen_10dp"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:background="@drawable/button_background_dark"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_15dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_20sp"
+                        android:text="Select Image"
+                        android:textColor="@color/black_transparent"
+                        android:padding="@dimen/dimen_10dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp">
+                    <ImageView
+                        android:layout_weight="30"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/gift_trends"
+                        android:scaleType="fitXY"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:layout_height="@dimen/dimen_70dp"/>
+                    <ImageView
+                        android:layout_weight="30"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/gift_02"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:layout_height="@dimen/dimen_70dp"/>
+                    <ImageView
+                        android:layout_weight="30"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/gift_03"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:scaleType="fitXY"
+                        android:layout_height="@dimen/dimen_70dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- second section ends-->
+
+
+            <!-- third section-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/card_grey"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10dp"
+                android:layout_weight="30"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_20sp"
+                    android:text="Enter Recipient Details"
+                    android:textColor="@color/black_transparent"
+                    android:padding="@dimen/dimen_10dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:hint="Recipient Email Address"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:textSize="@dimen/text_16sp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:hint="Recipient Mobile No."
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:textSize="@dimen/text_16sp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background_light"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="@dimen/dimen_40dp"
+                    android:paddingVertical="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:text="submit"
+                    android:textSize="@dimen/dimen_14dp"
+                    android:textColor="@color/black_transparent"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

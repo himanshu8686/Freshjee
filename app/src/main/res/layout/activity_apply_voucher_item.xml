@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="2.5dp"
+    tools:context=".ApplyVoucherActivity">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10dp"
+            android:text="OR"
+            android:textColor="@color/black_transparent"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_18sp"
+                android:padding="@dimen/dimen_10dp"
+                android:textColor="@color/black_transparent"
+                android:text="FRESHJEEB500"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:padding="@dimen/dimen_10dp"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:text="Not applicable"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_10dp"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_weight="85"
+                android:text="50%"
+                android:textColor="@color/colorAccent"
+                android:paddingTop="@dimen/dimen_2dp"
+                android:paddingBottom="@dimen/dimen_2dp"
+                android:paddingLeft="@dimen/dimen_5dp"
+                android:paddingRight="@dimen/dimen_5dp"
+                android:textSize="@dimen/text_16sp"
+                android:gravity="center"
+
+                android:background="@drawable/button_dashed_background_light"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:text="Half Price Store: Flat 50% Off on Everything"
+                />
+
+        </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingLeft="@dimen/dimen_10dp"
+          android:paddingRight="@dimen/dimen_10dp"
+          android:paddingTop="@dimen/dimen_5dp"
+          android:paddingBottom="@dimen/dimen_5dp"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="\u25A0 "
+              android:textColor="@color/textColorGrey"
+              android:textSize="@dimen/text_10sp"/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/dimen_3dp"
+              android:textSize="@dimen/text_12sp"
+              android:text="Get flat 50% off on select products displayed on the landing page"
+              />
+      </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:paddingBottom="@dimen/dimen_5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25A0 "
+                android:textColor="@color/textColorGrey"
+                android:textSize="@dimen/text_10sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_3dp"
+                android:textSize="@dimen/text_12sp"
+                android:text="No coupon code required"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_dark_white"
+            android:text="Buy More"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:textSize="@dimen/text_16sp"
+            android:paddingVertical="@dimen/dimen_2dp"
+            android:paddingHorizontal="@dimen/dimen_20dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

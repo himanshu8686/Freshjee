@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textLightGrey"
+    tools:context=".ApplyVoucherActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Apply Voucher"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:padding="@dimen/dimen_10dp"
+            android:src="@drawable/back_icon"
+            android:tint="@color/white" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top_card"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_5dp"
+        android:layout_marginHorizontal="@dimen/dimen_10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:weightSum="100">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:src="@drawable/coupon_apply"
+                android:layout_gravity="center"
+                android:layout_weight="5" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="apply voucher"
+                android:maxLines="1"
+                android:paddingRight="@dimen/dimen_5dp"
+                android:layout_weight="70"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_light"
+                android:text="Apply"
+                android:layout_gravity="center"
+                android:textColor="@color/black_transparent"
+                android:textSize="@dimen/text_14sp"
+                android:textStyle="bold"
+                android:paddingVertical="@dimen/dimen_4dp"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/dimen_5dp"
+                android:layout_weight="25"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_below="@id/top_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_apply_voucher"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginHorizontal="@dimen/dimen_10dp"
+            ></androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+</RelativeLayout>

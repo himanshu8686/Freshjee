@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrdersActivity">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="My Rating and Review Page"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:padding="@dimen/dimen_10dp"
+            android:src="@drawable/back_icon"
+            android:tint="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/upper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        >
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please select multiple pay Now order to pay at once"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10dp"
+            android:textSize="@dimen/dimen_16dp"
+            />
+        <TextView
+            android:id="@+id/btn_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_below="@+id/tv_header"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:paddingVertical="@dimen/dimen_7dp"
+            android:paddingHorizontal="25dp"
+            android:text="Pay Now"
+
+            />
+    </RelativeLayout>
+
+    <!--Recycler view with card -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/upper">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_orders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimen_10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4ccc10</color>
+    <color name="colorPrimaryDark">#36a104</color>
+    <color name="colorAccent">#4ccc10</color>
+    <color name="light_green">#94f266</color>
+
+    <color name="light_green0">#eff6fe</color>
+    <color name="header_wellcom_color">#ebebeb</color>
+    <color name="white_transparent">#80FFFFFF</color>
+    <color name="facebook_color">#4267B2</color>
+    <color name="line_color">#d5d5d5</color>
+    <color name="cardBackgroundColor">#F8F7F7</color>
+    <color name="textColorBlack">#DD132135</color>
+    <color name="textColorGrey">#8f8f8f</color>
+    <color name="textColorGreyLight1">#3b3738</color>
+    <color name="textLightGrey">#b8b8b8</color>
+    <color name="card_grey">#edebec</color>
+    <color name="grey">	#808080</color>
+    <color name="black">#000000</color>
+    <color name="black_light_transparent">#232222</color>
+    <color name="textColor">#3e4a59</color>
+    <color name="drawe_main_text">#666666</color>
+    <color name="drawe_child_text">#7e7c7d</color>
+    <color name="black_transparent">#9A000000</color>
+    <color name="gallery_bucket_text_background">#66000000</color>
+    <color name="gallery_item_background">#ddd</color>
+
+    <color name="toolbar_dull_white">#d5d5d5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="background_dull_dark_white">#E6E6E6</color>
+
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <color name="card_background">#E2E7E1</color>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>
